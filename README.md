@@ -23,9 +23,5 @@ To create out-of-source build for VS2010:
 2. Install OpenCV, if you don't already have it.
 
 3. Modify the root CMakeLists.txt so that the _LIB and _INCLUDE directories point at their respective installation directories.
-    NOTE: I renamed the CLEye include dir so that I can include it specifically, like so:
-      #include <ClEyeInclude/opencv/...>
-  
-    This is to avoid conflicts between the user's opencv installation and the opencv files the are distributed with the CLEye SDK.
 4. Create a bld directory
 5. cmake -G "Visual Studio 10" [your src directory]
